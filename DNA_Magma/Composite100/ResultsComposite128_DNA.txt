@@ -1,0 +1,657 @@
+*******************************************************
+1
+*******************Minimum Weight**********************
+2
+*******************Dimension**********************
+124
+*******************Length**********************
+128
+[ 128, 124, 2 ]
+***************Generator Matrix************************
+[w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2
+    1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 
+    w 0 w 0 1 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 
+    w^2 w w^2 0 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 
+    1 w w^2 w w^2 w]
+[1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 
+    w^2 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 
+    w^2 0 w 0 w 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 
+    0 1 w^2 w w^2 0 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 
+    w^2 1 w w^2 w w^2]
+[w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w 
+    w^2 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 
+    w^2 0 w 0 w 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 
+    0 1 w^2 w w^2 w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 
+    w^2 w^2 1 w w^2 w]
+[w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1
+    w w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 
+    w^2 0 w 0 w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 
+    1 0 1 w^2 w w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 
+    w^2 w^2 1 w w^2]
+[w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1
+    1 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 
+    0 w^2 0 w w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w 
+    w 1 0 1 w^2 w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 
+    w^2 w^2 w^2 1 w]
+[1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w
+    1 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 
+    w^2 0 w^2 0 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w 
+    w^2 w w w 1 0 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 
+    1 0 w^2 w^2 w^2 1]
+[1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w
+    w 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 
+    w^2 0 w^2 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w 
+    w^2 w w w 1 0 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 
+    1 0 w^2 w^2 w^2]
+[w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0
+    w w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 
+    1 0 w^2 0 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w 
+    w^2 w w w 1 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w 
+    w 1 0 w^2 w^2]
+[w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w
+    0 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w 
+    w^2 1 0 w^2 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 
+    0 w w^2 w w w w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 
+    w w w w 1 0 w^2]
+[0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w
+    w w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 
+    w w^2 1 0 w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 
+    0 w w^2 w w w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 
+    w^2 w w w w 1 0]
+[w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2
+    w 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 
+    w^2 w w^2 1 w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 
+    1 w 0 w w^2 w 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w 
+    w^2 w^2 w w w w 1]
+[w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 
+    w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 
+    0 w^2 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 
+    0 1 w 0 w w^2 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w 
+    w^2 w^2 w w w w]
+[w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 
+    w^2 w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 
+    w^2 w 0 w^2 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 
+    w 1 1 0 1 w 0 w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 
+    1 w w^2 w^2 w w w]
+[w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2
+    1 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 
+    w^2 w 0 w^2 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 
+    w 1 1 0 1 w 0 w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 
+    1 w w^2 w^2 w w]
+[1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w 
+    w^2 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 
+    w^2 w^2 w 0 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 
+    w^2 w 1 1 0 1 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 
+    0 1 1 w w^2 w^2 w]
+[w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1
+    w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 
+    w^2 w^2 w w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 
+    w^2 w 1 1 0 1 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 
+    0 1 1 w w^2 w^2]
+[w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0
+    1 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 
+    1 w^2 w^2 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 
+    w^2 w 1 1 0 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 
+    0 0 1 1 w w^2]
+[1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0
+    0 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 
+    w^2 1 w^2 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 
+    w^2 w^2 w 1 1 w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 
+    1 w 1 0 0 1 1 w]
+[0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2
+    0 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 
+    w^2 1 w^2 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 
+    0 w^2 w^2 w 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 
+    0 1 w 1 0 0 1 1]
+[0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 
+    w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 
+    1 w^2 1 w^2 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w 
+    w 0 w^2 w^2 w 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 
+    0 0 1 w 1 0 0 1]
+[w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w
+    1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 
+    0 1 w^2 1 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w 
+    w 0 w^2 w^2 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 
+    0 0 1 w 1 0 0]
+[1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2
+    w 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 
+    w 0 1 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 
+    0 w w 0 w^2 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 
+    0 0 0 1 w 1 0]
+[w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 
+    w^2 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 
+    w^2 0 w 0 1 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 
+    w^2 1 0 w w 0 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w 
+    w 1 0 0 0 1 w 1]
+[w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2
+    0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 
+    w^2 0 w 0 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 
+    w^2 1 0 w w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w 
+    w 1 0 0 0 1 w]
+[0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w 
+    w^2 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 
+    0 1 w^2 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 
+    w^2 1 w^2 1 0 w w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 
+    w 0 w w 1 0 0 0 1]
+[w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w
+    w w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 
+    0 1 w^2 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 
+    w^2 1 w^2 1 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 
+    w 0 w w 1 0 0 0]
+[w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w
+    w 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w 
+    w^2 0 1 w^2 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 
+    0 w^2 1 w^2 1 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w 
+    w^2 w 0 w w 1 0 0]
+[w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2
+    w w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w 
+    w w^2 0 1 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 
+    0 w^2 1 w^2 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w 
+    w^2 w 0 w w 1 0]
+[w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w 
+    w^2 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 
+    1 w w w^2 0 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 
+    0 w 1 0 w^2 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 
+    w w^2 w 0 w w 1]
+[w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w
+    w 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 
+    1 w w w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 
+    0 w 1 0 w^2 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 
+    w w^2 w 0 w w]
+[w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w
+    w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 
+    w 0 1 w w w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w 
+    w^2 0 w 1 0 w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w 
+    w^2 w w^2 w 0 w]
+[w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1
+    w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 
+    0 w 0 1 w 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 
+    w w^2 0 w 1 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w 
+    w^2 w w^2 w 0]
+[w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 
+    w^2 w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w 
+    w w w^2 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 
+    1 0 0 0 1 w w 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 
+    0 1 w^2 1 w^2 0]
+[w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0
+    w^2 w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w 
+    w w w^2 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 
+    1 0 0 0 1 w 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 
+    0 1 w^2 1 w^2]
+[w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2
+    1 0 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 
+    w w w w^2 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 
+    w 1 0 0 0 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 
+    w w 0 1 w^2 1]
+[0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 
+    w^2 1 w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 
+    0 w^2 w w w 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 
+    0 1 w 1 0 0 0 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 
+    w^2 0 w w 0 1 w^2]
+[1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0
+    w^2 w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 
+    0 w^2 w w 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 
+    0 1 w 1 0 0 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 
+    w^2 0 w w 0 1]
+[w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0
+    w 0 w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w 
+    w^2 0 w^2 w 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 
+    1 0 0 1 w 1 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w 
+    w^2 w^2 0 w w 0]
+[0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1
+    0 w w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w 
+    w^2 0 w^2 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 
+    1 0 0 1 w 1 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w 
+    w^2 w^2 0 w w]
+[w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2
+    1 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 
+    1 w w^2 0 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 
+    1 1 0 0 1 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 
+    w w^2 w^2 0 w]
+[0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 
+    w^2 1 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 
+    w^2 1 w w^2 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 
+    w^2 w 1 1 0 0 1 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 
+    0 1 1 w w^2 w^2 0]
+[1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1
+    w^2 w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 
+    0 w^2 1 w 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 
+    w^2 w 1 1 0 0 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 
+    0 1 1 w w^2 w^2]
+[w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 
+    w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 
+    1 0 0 w^2 1 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w 
+    w^2 w^2 w 1 1 0 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 
+    0 w 1 0 1 1 w w^2]
+[1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1
+    w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 
+    1 0 0 w^2 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w 
+    w^2 w^2 w 1 1 w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 
+    w 0 w 1 0 1 1 w]
+[w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 
+    w^2 1 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 
+    w^2 w 1 0 0 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w 
+    w w^2 w^2 w 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w 
+    w^2 w 0 w 1 0 1 1]
+[1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2
+    w^2 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 
+    w^2 w 1 0 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w 
+    w w^2 w^2 w 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w 
+    w^2 w 0 w 1 0 1]
+[w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w
+    w^2 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 
+    1 w^2 w 1 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w 
+    w w w^2 w^2 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w 
+    w^2 w 0 w 1 0]
+[w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2
+    0 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 
+    w^2 1 w^2 w w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 
+    1 w w w w w^2 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w 
+    w w w^2 w 0 w 1]
+[w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w 
+    w^2 0 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w 
+    w^2 w^2 1 w^2 w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 
+    w^2 0 1 w w w w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 
+    1 w w w w^2 w 0 w]
+[0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w
+    w^2 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w 
+    w^2 w^2 1 w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 
+    w^2 0 1 w w w w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 
+    1 w w w w^2 w 0]
+[w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 
+    w^2 w 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 
+    w w w^2 w^2 w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 
+    w^2 w^2 0 1 w w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 
+    1 0 1 w w w w^2 w]
+[w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1
+    w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 
+    0 w w w^2 w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 
+    w^2 w^2 0 1 w w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 
+    1 0 1 w w w w^2]
+[w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2
+    0 1 w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 
+    w w 0 w w w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 
+    w^2 w^2 0 1 w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w 
+    w^2 1 0 1 w w w]
+[1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 
+    w^2 0 w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 
+    1 1 w w 0 w 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 
+    w^2 w^2 w^2 0 w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 
+    w w^2 1 0 1 w w]
+[0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0
+    w^2 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 
+    1 1 w w 0 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 
+    w^2 w^2 w^2 w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 
+    w w^2 1 0 1 w]
+[w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 
+    w^2 0 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 
+    w^2 w 1 1 w w w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w 
+    w^2 w 1 w^2 w^2 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 
+    0 w^2 w w^2 1 0 1]
+[0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0
+    w^2 w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 
+    w^2 w 1 1 w w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 
+    w w^2 w 1 w^2 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 
+    0 w^2 w w^2 1 0]
+[w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0
+    w 0 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 
+    w^2 w 1 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w 
+    w^2 w w^2 w 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 
+    w 0 w^2 w w^2 1]
+[0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w
+    0 w 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 
+    w^2 w^2 w 1 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 
+    w w^2 w w^2 w 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 
+    1 w 0 w^2 w w^2]
+[w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0
+    w 0 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 
+    w^2 w^2 w w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 
+    w w^2 w w^2 w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 
+    0 1 w 0 w^2 w]
+[0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1
+    0 w w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 
+    1 w^2 w^2 w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w 
+    w 0 w w^2 w w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 
+    w^2 0 1 w 0 w^2]
+[w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w
+    1 0 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w 
+    w w 1 w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 
+    w w 0 w w^2 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 
+    1 w^2 0 1 w 0]
+[0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w
+    w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w 
+    w^2 w w w 1 w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 
+    0 0 1 w w 0 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 
+    w^2 1 w^2 0 1 w]
+[1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2
+    w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w 
+    w^2 w w w w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 
+    0 0 1 w w 0 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 
+    w^2 1 w^2 0 1]
+[1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 0
+    w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 
+    w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 
+    w^2 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 
+    w^2 0 w 0 w 0 1]
+[w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w
+    0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 
+    1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w 
+    w^2 w^2 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 
+    0 w^2 0 w 0 w 0]
+[0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 
+    w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 
+    w w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 
+    1 w w^2 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 
+    w^2 0 w^2 0 w 0 w]
+[w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w
+    w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 
+    w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 
+    1 1 w w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 
+    w^2 0 w^2 0 w 0]
+[w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 
+    w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 
+    w w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 
+    w w 1 1 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 
+    0 w^2 0 w^2 0 w]
+[w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w
+    w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 
+    1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 
+    w w 1 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 
+    0 w^2 0 w^2 0]
+[1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1
+    w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 
+    1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 
+    0 w w 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 
+    1 0 w^2 0 w^2]
+[0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 
+    w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 
+    w^2 w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 
+    w^2 w w 0 w w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 
+    w^2 w w^2 1 0 w^2 0]
+[1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 
+    w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 
+    w^2 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 
+    w^2 w w 0 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 
+    w^2 w w^2 1 0 w^2]
+[w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w 
+    w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 
+    0 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 
+    w^2 w w w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 
+    0 w^2 w w^2 1 0]
+[w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w 0
+    w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 
+    w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 
+    w^2 w 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 
+    0 w^2 w w^2 1]
+[w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 1
+    0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 
+    w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 
+    w^2 w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 
+    w^2 w 0 w^2 w w^2]
+[w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w
+    1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w 
+    w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 
+    1 w^2 w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 
+    w^2 w 0 w^2 w]
+[w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w
+    w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w 
+    w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w 
+    w^2 1 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 
+    w^2 w^2 w 0 w^2]
+[0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w w
+    w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w 
+    1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 
+    w w^2 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 
+    1 w^2 w^2 w 0]
+[w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w
+    w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 
+    w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 w^2 0 
+    0 1 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 
+    w^2 1 w^2 w^2 w]
+[1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 
+    w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 w 
+    w^2 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 
+    w^2 0 0 1 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 
+    w^2 1 w^2 1 w^2 w^2]
+[0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 
+    w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 
+    w 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 
+    w^2 0 0 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 1 
+    w^2 1 w^2 1 w^2]
+[1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 w
+    w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 1 
+    0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 1 
+    w^2 0 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 0 
+    1 w^2 1 w^2 1]
+[1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1
+    w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 1 
+    0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 w^2 w 
+    1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 w^2 0 w 
+    0 1 w^2 1 w^2]
+[w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 w^2 1
+    1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 0 
+    w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 
+    w^2 w 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 
+    w^2 0 w 0 1 w^2 1]
+[w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 w^2 0
+    1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 0 
+    1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 0 
+    w^2 w 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 1 
+    w^2 0 w 0 1 w^2]
+[w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 0 0
+    0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 1 
+    w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w w^2 
+    0 w^2 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 0 
+    1 w^2 0 w 0 1]
+[0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w 1
+    0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 w 
+    w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w w 
+    w^2 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w w^2 
+    0 1 w^2 0 w 0]
+[w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 w w
+    1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 1 
+    0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 w w 
+    w w^2 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w 
+    w^2 0 1 w^2 0 w]
+[w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0 1
+    w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 0 
+    w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w w^2 
+    w w w w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 w w 
+    w^2 0 1 w^2 0]
+[0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 1 0
+    1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 0 
+    w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w 
+    w^2 w w 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 1 
+    w w w^2 0 1 w^2]
+[1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 w^2 0
+    0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 0 
+    w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w w 
+    w^2 w w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 0 
+    1 w w w^2 0 1]
+[w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1 0
+    0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 1 
+    w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 w w 
+    w w^2 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 w 
+    0 1 w w w^2 0]
+[1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w^2 1
+    0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w w 
+    w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 1 
+    w w w 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 w 0 
+    w 0 1 w w w^2]
+[w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 0 w
+    1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 w 
+    w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 w^2 
+    1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 w^2 0 
+    w 0 w 0 1 w w]
+[0 w^2 1 w^2 1 0 w w 0 w^2 w^2 w 1 1 0 1 w 0 w w^2 w w w 1 0 1 w^2 w w^2 0 w 1 w
+    w 1 0 0 0 1 w 1 0 0 1 1 w w^2 w^2 w w w w 1 0 w^2 w^2 w^2 1 w w^2 w w^2 w 0 
+    w w w^2 w w w w^2 0 w^2 w 1 w^2 0 0 1 w w^2 1 w^2 w^2 w w 0 w w 1 1 w w^2 
+    w^2 1 w w w^2 0 1 w^2 0 w 0 1 w^2 1 w^2 1 w^2 w^2 w 0 w^2 w w^2 1 0 w^2 0 
+    w^2 0 w 0 w 0 1 w]
+[0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 1
+    w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 
+    w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 
+    0 w^2 w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 
+    w w w w^2 w w]
+[w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w 0
+    1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 
+    w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 
+    1 0 w^2 w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 
+    w^2 w w w w^2 w]
+[w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 
+    w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 
+    1 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 
+    0 w^2 1 0 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 
+    0 w^2 w w w w^2]
+[1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1
+    w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 
+    0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 
+    0 w^2 1 w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w 
+    w^2 0 w^2 w w w]
+[0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 
+    w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 
+    1 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 
+    0 w 0 w^2 w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 
+    w w^2 0 w^2 w w]
+[0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 1
+    w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 
+    w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 
+    1 0 w 0 w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 
+    w w^2 0 w^2 w]
+[0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0
+    1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 
+    0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 
+    w^2 1 0 w w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 
+    w^2 1 w w^2 0 w^2]
+[1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w w
+    0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w 
+    w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 
+    w^2 1 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 
+    w^2 1 w w^2 0]
+[w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w
+    w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 
+    0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 
+    1 w^2 1 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 
+    0 w^2 1 w w^2]
+[1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 0
+    w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 
+    1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 
+    w^2 1 w^2 w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 
+    w 1 0 0 w^2 1 w]
+[0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 
+    w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w 
+    w^2 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 
+    w^2 1 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 
+    w^2 w 1 0 0 w^2 1]
+[0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 
+    w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 
+    w 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 
+    w^2 1 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 
+    w^2 w 1 0 0 w^2]
+[1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 w
+    w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 
+    w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w 
+    w^2 w^2 1 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 
+    w^2 1 w^2 w 1 0 0]
+[1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1
+    w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 
+    1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w 
+    w^2 w^2 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 
+    w^2 1 w^2 w 1 0]
+[w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 1
+    1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 
+    w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 
+    0 w w^2 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 
+    w^2 1 w^2 w 1]
+[w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 0
+    1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 
+    w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w 
+    w^2 0 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w 
+    w^2 w^2 1 w^2 w]
+[w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w 1
+    0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 
+    w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 
+    w w^2 0 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 0 w w 
+    w^2 w^2 1 w^2]
+[w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w
+    1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 0 
+    0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 1 
+    w^2 w w^2 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 
+    0 w w w^2 w^2 1]
+[w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w 0
+    w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 w 
+    w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 0 
+    1 w^2 w 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 w w 
+    0 w w w^2 w^2]
+[w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w
+    0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w w w^2 
+    w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 0 w^2 
+    0 1 w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 w 1 1 
+    w w 0 w w w^2]
+[w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 
+    w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w 
+    w w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 
+    0 w^2 0 1 w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 
+    w 1 1 w w 0 w w]
+[1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 0 w
+    w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w w 
+    1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 w^2 
+    0 w^2 0 w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 w^2 
+    w 1 1 w w 0 w]
+[0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w^2 w
+    w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 w 
+    0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 0 
+    w^2 0 w^2 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 
+    w^2 w 1 1 w w 0]
+[w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 w^2 w
+    w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 1 
+    w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 w 
+    0 w^2 0 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 w^2 
+    w^2 w 1 1 w w]
+[w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 w^2 1
+    w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 0 
+    0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 w 0 
+    w 0 w^2 w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 
+    w^2 w^2 w 1 1 w]
+[w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1 0
+    1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 1 
+    w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 0 
+    w 0 w 0 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 1 
+    w^2 w^2 w 1 1]
+[1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 w 1
+    0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 w w^2 
+    0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w w 1 
+    0 w 0 w 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w w w 
+    1 w^2 w^2 w 1]
+[w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w^2 
+    w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 
+    w w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w 
+    w 1 0 w 0 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w 
+    w w 1 w^2 w^2 w]
+[w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 w w
+    w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 0 w^2 
+    0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 w^2 w 
+    w 1 0 w w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w w w^2 w 
+    w w 1 w^2 w^2]
+[w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w w^2 
+    w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 
+    0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 
+    w^2 w w 1 0 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w w 
+    w w^2 w w w 1 w^2]
+[w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w 0
+    w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 w 
+    0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 
+    w^2 w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w 
+    w w w^2 w w w 1]
+[w w^2 w w^2 w 1 w^2 w^2 w^2 0 1 w w w w w^2 w^2 w 1 1 0 0 1 w 1 0 0 0 1 w w 0 w
+    0 w^2 w w^2 1 0 1 w w w w^2 w 0 w 1 0 1 1 w w^2 w^2 0 w w 0 1 w^2 1 w^2 0 1 
+    1 0 w 0 w 0 w^2 0 w^2 0 1 w^2 w w^2 0 w w^2 w^2 1 w^2 1 w^2 1 0 w 0 w^2 1 0 
+    w^2 w w 1 w^2 w^2 w 1 1 w w 0 w w w^2 w^2 1 w^2 w 1 0 0 w^2 1 w w^2 0 w^2 w 
+    w w w^2 w w w]
+-------------- Automorphism Group -----------------------
+Permutation group AMG acting on a set of cardinality 384
+Order = 2^125 * 3^49 * 5^24 * 7^16 * 11^8 * 13^8
+--------------  GC Weight Enumerator --------------------
+5316911983139663491615228241121378304*a^128 + 21437789116019123198192600268201397321728*a^126*b^2 + 28365767965345969845075175588208482222866432*a^124*b^4 + 14418320928674812273207871661116384923952873472*a^122*b^6 + 3800803271555194586476283812539940121154737405952*a^120*b^8 + 603060497477091988043307482916197737133672838987776*a^118*b^10 + 63074647987259066698662956741153439637928670696308736*a^116*b^12 + 4623163742805445731829415605386291282386577983658786816*a^114*b^14 + 248148313995492034843045657355157319503772098642875252736*a^112*b^16 + 10081633462167544516517688335564558592818578064400791371776*a^110*b^18 + 318102066348472979037635073765024083455501549787624696184832*a^108*b^20 + 7956682854366638593160471839907471428163892607227876083761152*a^106*b^22 + 160430942335375922083947880804778351763160148339534587873984512*a^104*b^24 + 2643901929686816386287039884822297282538210730202351130202079232*a^102*b^26 + 36028409629145553407609734034500600514194777320567761219765665792*a^100*b^28 + 409978454400619942862357589109164684898708202055867109862025461760*a^98*b^30 + 3928684664851107355279082431954861774994002577668810300370725109760*a^96*b^32 + 31933693532479574974495005515281487726831116170611754656437591080960*a^94*b^34 + 221559007032489276625649254082087814868440554777320909598979637903360*a^92*b^36 + 1319268852685633080480473952284956172838855448701994547023610600488960*a^90*b^38 + 6773938147443539257499016323214037323291744976565088886763125620080640*a^88*b^40 + 30116881798390090573694980799315674408449849882716308574528169930915840*a^86*b^42 + 116360679675598077852381811133833372352745586714114782210807952142499840*a^84*b^44 + 391916260240710046613612131840554704461950520002172282818940767557386240*a^82*b^46 + 1153859840655494740115958502537674209218424760242650093254676940524093440*a^80*b^48 + 2976487425690908877840628598355667981221616180671523024301080516164059136*a^78*b^50 + 6740868581711764227358669278668256574100415963337459307877100580436443136*a^76*b^52 + 13425209963576888916976677358720109549378932757184540490874464091406073856*a^74*b^54 + 23546423449104660373645158467118697559775852328583025565736220508737765376*a^72*b^56 + 36409351685366915850775501586081560072324666233103945542625165386675388416*a^70*b^58 + 49677166282576893670148869779600858861844188272632837011882657337256706048*a^68*b^60 + 59843778313966242073957186896433983885972623315791449295291993896913993728*a^66*b^62 + 63673067700127772454659561341396614601601302224384272594207656837191303168*a^64*b^64 + 59843778313966242073957186896433983885972623315791449295291993896913993728*a^62*b^66 + 49677166282576893670148869779600858861844188272632837011882657337256706048*a^60*b^68 + 36409351685366915850775501586081560072324666233103945542625165386675388416*a^58*b^70 + 23546423449104660373645158467118697559775852328583025565736220508737765376*a^56*b^72 + 13425209963576888916976677358720109549378932757184540490874464091406073856*a^54*b^74 + 6740868581711764227358669278668256574100415963337459307877100580436443136*a^52*b^76 + 2976487425690908877840628598355667981221616180671523024301080516164059136*a^50*b^78 + 1153859840655494740115958502537674209218424760242650093254676940524093440*a^48*b^80 + 391916260240710046613612131840554704461950520002172282818940767557386240*a^46*b^82 + 116360679675598077852381811133833372352745586714114782210807952142499840*a^44*b^84 + 30116881798390090573694980799315674408449849882716308574528169930915840*a^42*b^86 + 6773938147443539257499016323214037323291744976565088886763125620080640*a^40*b^88 + 1319268852685633080480473952284956172838855448701994547023610600488960*a^38*b^90 + 221559007032489276625649254082087814868440554777320909598979637903360*a^36*b^92 + 31933693532479574974495005515281487726831116170611754656437591080960*a^34*b^94 + 3928684664851107355279082431954861774994002577668810300370725109760*a^32*b^96 + 409978454400619942862357589109164684898708202055867109862025461760*a^30*b^98 + 36028409629145553407609734034500600514194777320567761219765665792*a^28*b^100 + 2643901929686816386287039884822297282538210730202351130202079232*a^26*b^102 + 160430942335375922083947880804778351763160148339534587873984512*a^24*b^104 + 7956682854366638593160471839907471428163892607227876083761152*a^22*b^106 + 318102066348472979037635073765024083455501549787624696184832*a^20*b^108 + 10081633462167544516517688335564558592818578064400791371776*a^18*b^110 + 248148313995492034843045657355157319503772098642875252736*a^16*b^112 + 4623163742805445731829415605386291282386577983658786816*a^14*b^114 + 63074647987259066698662956741153439637928670696308736*a^12*b^116 + 603060497477091988043307482916197737133672838987776*a^10*b^118 + 3800803271555194586476283812539940121154737405952*a^8*b^120 + 14418320928674812273207871661116384923952873472*a^6*b^122 + 28365767965345969845075175588208482222866432*a^4*b^124 + 21437789116019123198192600268201397321728*a^2*b^126 + 5316911983139663491615228241121378304*b^128
+------------------ Number Of Words ----------------------
+452312848583266388373324160190187140051835877600158453279131187530910662656
